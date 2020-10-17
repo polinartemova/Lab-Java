@@ -9,7 +9,8 @@ public class zadacha2 {
 		Scanner in =new Scanner (System.in);
 		
 		System.out.println("Задача №1");
-	     String s= new String("mice");
+		System.out.println("Введите слово");
+	     String s= in.nextLine();
 	     System.out.println("Сколько раз повторить символ?");
 		int n = in.nextInt();
 		System.out.println("Результат: " + repeat(s, n));
@@ -23,7 +24,9 @@ public class zadacha2 {
 		{ arr[i]=in.nextInt();
 		}
 		System.out.println("Разница между самым большим и самым маленьким числом : " + differenceMaxMin(arr));
+		in.nextLine();
 		
+	
 		System.out.println("Задача №3");
 		System.out.println("Введите размер массива");
 		int size1=in.nextInt();
@@ -44,36 +47,45 @@ public class zadacha2 {
 		for (int i=0;i<size;i++)
 		{ arr2[i]=in.nextInt();
 		}
-		System.out.println("Результат:");
+		System.out.println("Результат:"+ cumulativeSum(arr2));
 	/*	printArray (cumulativeSum(arr2));*/
-		
+		in.nextLine();
 		
 		System.out.println("Задача №5");
-		String input = new String("50.23");
+		System.out.println("Введите десятичное число");
+		String input = in.nextLine();
 		System.out.println("Число десятичных знаков: " + getDecimalPlaces(input));
 		
 		System.out.println("Задача №6");
+		System.out.println("Введите число");
 		int input1 = in.nextInt();
 		System.out.println("Число Фибоначчи: " + Fibonacci(input1));
+		in.nextLine();
 		
 		System.out.println("Задача №7");
-		String input2 = new String("59001");
+		System.out.println("Введите почтовый индекс");
+		String input2 =in.nextLine() ;
 		System.out.println("Почтовый индекс действителен?: " + isValid(input2));
 		
 		
 		System.out.println("Задача №8");
-		String a = new String("ratio");
-		String b = new String("orator");
+		System.out.println("Введите перву строку");
+		String a = in.nextLine();
+		System.out.println("Введите вторую строку");
+		String b = in.nextLine();
 		System.out.println("Пара строк образует странную пару?: " + isStrangePair(a, b));
 		
 		
 		System.out.println("Задача №9");
-		String a1 = new String("automation");
-		String b1 = new String("auto-");
+		System.out.println("Введите слово");
+		String a1 = in.nextLine();
+		System.out.println("Введите второе слово");
+		String b1 = in.nextLine();
 		System.out.println("isPrefix: " + isPrefix(a1, b1));
 		System.out.println("isSuffix: " + isSuffix(a1, b1));
 		
 		System.out.println("Задача №10");
+		System.out.println("Введите число");
 		int n1 = in.nextInt();
 		System.out.println("Результат " + boxSeq(n1));
 		
